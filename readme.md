@@ -51,6 +51,7 @@ The goal of Campus Connect is to create a simple and user-friendly platform wher
 **Kaneeka Singh**
 
 B.Tech Computer Science & Engineering
+
 ## 🌐 Live Demo
 
 [🚀 View Campus Connect Live](https://kaneekasingh26-singh.github.io/campus-connect/)
