@@ -1,112 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Expense Tracker</title>
-
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<div class="app">
-  
-  <header>
-    <h1>💰 Expense Tracker</h1>
-    <p>Track your money, understand your spending.</p>
-  </header>
 
-  <section class="summary">
-    <div class="card balance">
-      <span>Total Balance</span>
-      <h2 id="balance">₹0</h2>
-    </div>
+    <header>
+        <nav>
+            <h2>Campus Connect</h2>
 
-    <div class="card income">
-      <span>Total Income</span>
-      <h2 id="income">₹0</h2>
-    </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#events">Events</a>
+                <a href="#resources">Resources</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-    <div class="card expense">
-      <span>Total Expenses</span>
-      <h2 id="expense">₹0</h2>
-    </div>
-  </section>
+    <main>
 
-  <section class="form-section">
-    <h2>Add Transaction</h2>
+        <section id="home" class="hero">
+            <div>
+                <h1>Connect. Explore. Grow.</h1>
+                <p>
+                    Your one-stop platform to discover campus events,
+                    opportunities and useful student resources.
+                </p>
 
-    <form id="expenseForm">
+                <a href="#events" class="hero-btn">Explore Campus</a>
+            </div>
+        </section>
 
-      <div class="input-group">
-        <label>Description</label>
-        <input 
-          type="text" 
-          id="description" 
-          placeholder="e.g. College lunch"
-          required
-        >
-      </div>
+        <section id="events" class="section">
+            <h2>Upcoming Events</h2>
 
-      <div class="input-group">
-        <label>Amount</label>
-        <input 
-          type="number" 
-          id="amount" 
-          placeholder="Enter amount"
-          min="1"
-          required
-        >
-      </div>
+            <div class="cards">
 
-      <div class="input-group">
-        <label>Type</label>
-        <select id="type">
-          <option value="expense">Expense</option>
-          <option value="income">Income</option>
-        </select>
-      </div>
+                <div class="card">
+                    <h3>💻 Hackathon</h3>
+                    <p>Build innovative solutions and compete with talented students.</p>
+                    <button onclick="showMessage('Hackathon registered!')">
+                        Register
+                    </button>
+                </div>
 
-      <div class="input-group">
-        <label>Category</label>
-        <select id="category">
-          <option value="Food">🍔 Food</option>
-          <option value="Shopping">🛍️ Shopping</option>
-          <option value="Travel">🚕 Travel</option>
-          <option value="Education">📚 Education</option>
-          <option value="Entertainment">🎬 Entertainment</option>
-          <option value="Bills">💡 Bills</option>
-          <option value="Other">📦 Other</option>
-        </select>
-      </div>
+                <div class="card">
+                    <h3>🎤 Tech Talk</h3>
+                    <p>Learn from industry professionals and discover new career paths.</p>
+                    <button onclick="showMessage('You joined the Tech Talk!')">
+                        Join Event
+                    </button>
+                </div>
 
-      <div class="input-group">
-        <label>Date</label>
-        <input type="date" id="date" required>
-      </div>
+                <div class="card">
+                    <h3>🎨 Cultural Fest</h3>
+                    <p>Celebrate creativity, music, art and student talent.</p>
+                    <button onclick="showMessage('Cultural Fest added!')">
+                        Add Event
+                    </button>
+                </div>
 
-      <button type="submit">+ Add Transaction</button>
+            </div>
+        </section>
 
-    </form>
-  </section>
+        <section id="resources" class="section resources">
+            <h2>Student Resources</h2>
 
-  <section class="transactions">
-    <div class="transaction-header">
-      <h2>Transactions</h2>
+            <div class="resource-box">
+                <div>
+                    <h3>📚 Study Resources</h3>
+                    <p>Find notes, learning materials and useful study links.</p>
+                </div>
 
-      <input 
-        type="text" 
-        id="search"
-        placeholder="🔍 Search transactions..."
-      >
-    </div>
+                <div>
+                    <h3>💼 Career Opportunities</h3>
+                    <p>Discover internships, workshops and placement opportunities.</p>
+                </div>
 
-    <div id="transactionList">
-      <p class="empty">No transactions yet.</p>
-    </div>
+                <div>
+                    <h3>🤝 Student Community</h3>
+                    <p>Connect with students and participate in campus activities.</p>
+                </div>
+            </div>
+        </section>
 
-  </section>
+        <section id="contact" class="section contact">
+            <h2>Get Connected</h2>
+            <p>Have an idea or want to add an event?</p>
 
-</div>
-  <script src="script.js"></script>
+            <button onclick="showMessage('Thanks for reaching out!')">
+                Contact Campus Connect
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Campus Connect | Student Community Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
